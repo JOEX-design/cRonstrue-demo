@@ -1,0 +1,37 @@
+<head>
+  <title>cRonstrue 多语言DEMO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js"></script>
+  <script src="https://unpkg.com/cronstrue@latest/locales/zh_CN.min.js"></script>
+  <script src="https://unpkg.com/cronstrue@latest/locales/ja.min.js"></script>
+  <script src="https://unpkg.com/cronstrue@latest/locales/ko.min.js"></script>
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <div class="formWrapper">
+    <input value="0 0 * * ?" id="cronString">
+    <button onclick="onTranslate()">
+      💡 转译一下
+    </button>
+  </div>
+
+  <div class="resultWrapper">
+    <div class="resultItem">
+      <label>中文</label>
+      <text id="resultCN">-</text>
+    </div>
+    <div class="resultItem">
+      <label>英文</label>
+      <text id="resultEN">-</text>
+    </div>
+    <div class="resultItem">
+      <label>日文</label>
+      <text id="resultJA">-</text>
+    </div>
+    <div class="resultItem">
+      <label>韩文</label>
+      <text id="resultKO">-</text>
+    </div>
+  </div>
+</body>
